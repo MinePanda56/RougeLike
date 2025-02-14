@@ -64,11 +64,8 @@ class BossTank:
         distance = self.calculate_distance(player)
 
         # If the player is too close, move away from the player
-        if distance < 50:  # Adjust this distance as necessary
-            self.move_away_from(player.rect.centerx, player.rect.centery)
-        else:
             # Otherwise, move towards the player
-            self.move_towards(player.rect.centerx, player.rect.centery, game_background)
+        self.move_towards(player.rect.centerx, player.rect.centery, game_background)
 
         # Ensure the boss doesn’t clip into walls
         if self.is_near_wall(game_background):

@@ -46,7 +46,7 @@ class Game:
         self.PH = 1
         self.PPH=0
         self.LS=1
-        self.SP=9999
+        self.SP=0
         self.map=0
         self.fredfaz=1
         self.pprr=1
