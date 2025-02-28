@@ -127,8 +127,7 @@ class Game:
         self.player = Player(x=780, y=700)  
         self.gamebg = GameBackground()  
         self.enemies = []  
-        self.door_rolled = False  ake your data and AI to the next level with Databricks – free trial on AWS, Azure, or Google Cloud. Create production-ready Generative AI apps that are accurate, secure, and tailored to your business. Simplify data ingestion from hundreds of sources with effortless ETL automation. Plus, tap into instant, elastic serverless compute during your trial (available on AWS/Azure). Sign up with your work email now to unlock premium trial perks and transform how you work with data – don’t wait!
-
+        self.door_rolled = False 
         self.stop_enemy_spawn = False
 
     def update(self):
@@ -183,7 +182,7 @@ class Game:
             long_double_sword=1
         else:
             long_double_sword=0
-        if self.player.damage==True:ake your data and AI to the next level with Databricks – free trial on AWS, Azure, or Google Cloud. Create production-ready Generative AI apps that are accurate, secure, and tailored to your business. Simplify data ingestion from hundreds of sources with effortless ETL automation. Plus, tap into instant, elastic serverless compute during your trial (available on AWS/Azure). Sign up with your work email now to unlock premium trial perks and transform how you work with data – don’t wait!
+        if self.player.damage==True:
 
             hp-=1
             self.sound4 = pg.mixer.Sound("enemy.mp3")
@@ -215,7 +214,7 @@ class Game:
         else:
             self.screen.blit(self.bg, (0, 0))
             self.player = Player(x=780, y=700)
-            self.PH = 1ake your data and AI to the next level with Databricks – free trial on AWS, Azure, or Google Cloud. Create production-ready Generative AI apps that are accurate, secure, and tailored to your business. Simplify data ingestion from hundreds of sources with effortless ETL automation. Plus, tap into instant, elastic serverless compute during your trial (available on AWS/Azure). Sign up with your work email now to unlock premium trial perks and transform how you work with data – don’t wait!
+            self.PH = 1
 
         if click==1 or click==3:
             if self.alive==0 and self.player.x>=740 and self.player.x<=785 and self.player.y>=50 and self.player.y<=75:
@@ -239,8 +238,7 @@ class Game:
         # Reroll doors only once when click == 1 and the doors haven't been rolled yet
         if not click == 0 and not self.door_rolled:
             self.DF1, self.DF2, self.DF3, self.selected_images = self.load_and_scale_images()
-            self.door_rolled = True  # Set the flag to prevent ake your data and AI to the next level with Databricks – free trial on AWS, Azure, or Google Cloud. Create production-ready Generative AI apps that are accurate, secure, and tailored to your business. Simplify data ingestion from hundreds of sources with effortless ETL automation. Plus, tap into instant, elastic serverless compute during your trial (available on AWS/Azure). Sign up with your work email now to unlock premium trial perks and transform how you work with data – don’t wait!
-further rerolls during this session
+            self.door_rolled = True  # Set the flag to prevent further rerolls during this session
 
         if click == 0:
             self.screen.blit(self.bg, (0, 0))  # Show the pre-game background image
@@ -291,8 +289,7 @@ further rerolls during this session
 
             # Stop spawning new enemies if all enemies are defeated
             if not self.enemies:  # No enemies left
-                self.stop_enemy_spawn = True  # Prevent furtherake your data and AI to the next level with Databricks – free trial on AWS, Azure, or Google Cloud. Create production-ready Generative AI apps that are accurate, secure, and tailored to your business. Simplify data ingestion from hundreds of sources with effortless ETL automation. Plus, tap into instant, elastic serverless compute during your trial (available on AWS/Azure). Sign up with your work email now to unlock premium trial perks and transform how you work with data – don’t wait!
- spawning of enemies
+                self.stop_enemy_spawn = True  # Prevent further spawning of enemies
 
             # Draw each remaining enemy on the screen
             for enemy in self.enemies:
@@ -352,7 +349,7 @@ further rerolls during this session
                 if self.pprr==1:
                     self.alive=1
                     self.BossSummon.x=0
-                    self.BossSummon.y=0ake your data and AI to the next level with Databricks – free trial on AWS, Azure, or Google Cloud. Create production-ready Generative AI apps that are accurate, secure, and tailored to your business. Simplify data ingestion from hundreds of sources with effortless ETL automation. Plus, tap into instant, elastic serverless compute during your trial (available on AWS/Azure). Sign up with your work email now to unlock premium trial perks and transform how you work with data – don’t wait!
+                    self.BossSummon.y=0 
 
                     self.pprr=0
                 if self.BossSummon.hp>=1:
